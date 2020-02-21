@@ -53,7 +53,7 @@ function SmurfForm(props) {
         />
         <label>Height: </label>
         <input
-          placeholder="Inches Tall"
+          placeholder="10 cm"
           key="height"
           type="text"
           name="height"

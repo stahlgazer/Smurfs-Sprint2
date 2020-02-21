@@ -11,7 +11,7 @@ function SmurfList(props) {
           <div className="smurfs" key={item.id}>
             <p>Name: {item.name}</p>
             <p>Age: {item.age} years old</p>
-            <p>Height: {item.height} Inches</p>
+            <p>Height: {item.height}</p>
           </div>
         ))}
     </div>

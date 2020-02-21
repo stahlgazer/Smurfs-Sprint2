@@ -14,11 +14,7 @@ function App(props) {
         <h2>Let's Add Some New Smurfs To Our Village!</h2>
         <SmurfForm />
       </div>
-      <>
-        {!props.smurf && !props.isLoading && (
-          <button onClick={() => props.getSmurfs()}>View Village</button>
-        )}{" "}
-      </>
+      <button onClick={() => props.getSmurfs()}>View Village</button>
       <SmurfList />
     </div>
   );
