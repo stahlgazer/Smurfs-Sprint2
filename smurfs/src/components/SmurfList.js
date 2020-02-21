@@ -10,8 +10,8 @@ function SmurfList(props) {
         props.smurf.map(item => (
           <div className="smurfs" key={item.id}>
             <h2>Name: {item.name}</h2>
-            <h2>Age: {item.age}</h2>
-            <h2>Height: {item.height} CM</h2>
+            <h2>Age: {item.age} years old</h2>
+            <h2>Height: {item.height} Inches</h2>
           </div>
         ))}
     </div>

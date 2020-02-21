@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import { getSmurfs } from "../actions";
 
 function App(props) {
-  // Display Smurf Form and Smurf List
+  // Display Smurf Form and Smurf List, View village button if no smurf state
   return (
     <div className="App">
       <h1>Smurf's Village!</h1>

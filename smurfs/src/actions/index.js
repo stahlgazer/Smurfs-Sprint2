@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// ACTION FOR GETTING SMURF DATA
+// GETTING SMURF DATA
 export const getSmurfs = () => dispatch => {
   dispatch({ type: "FETCHING_SMURF_START" });
   axios
@@ -14,7 +14,7 @@ export const getSmurfs = () => dispatch => {
     });
 };
 
-// ACTION FOR ADDING NEW SMURF
+// ADDING NEW SMURF
 export const addSmurf = newSmurf => dispatch => {
   dispatch({ type: "FETCHING_SMURF_START", payload: newSmurf });
   axios

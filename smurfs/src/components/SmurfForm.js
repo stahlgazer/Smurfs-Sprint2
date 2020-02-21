@@ -42,7 +42,7 @@ function SmurfForm(props) {
         />
         <label>Age: </label>
         <input
-          placeholder="Smurf Age"
+          placeholder="Smurf Age In Years"
           key="age"
           type="text"
           name="age"
@@ -52,7 +52,7 @@ function SmurfForm(props) {
         />
         <label>Height: </label>
         <input
-          placeholder="32 CM"
+          placeholder="Inches Tall"
           key="height"
           type="text"
           name="height"

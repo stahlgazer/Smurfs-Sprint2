@@ -34,4 +34,7 @@ button:hover {
 
 label {
   margin: 1%;
+  background-color:white;
+  padding:10px;
+  border-radius:50px;
 }
