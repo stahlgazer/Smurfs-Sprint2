@@ -11,6 +11,7 @@ function SmurfForm(props) {
   });
 
   console.log("Our New Smurf:", newSmurf);
+
   //adding newSmurf to addSmurf action on submit
   const handleSubmit = e => {
     e.preventDefault();
@@ -61,7 +62,7 @@ function SmurfForm(props) {
           value={newSmurf.height}
         />
         <div>
-          <button onSubmit={handleSubmit}>Add a Smurf to the Village!</button>
+          <button>Add a Smurf to the Village!</button>
         </div>
       </form>
     </div>

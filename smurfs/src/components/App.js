@@ -6,12 +6,12 @@ import { connect } from "react-redux";
 import { getSmurfs } from "../actions";
 
 function App(props) {
-  // Display Smurf Form and Smurf List, View village button if no smurf state
+  // Display Smurf Form and Smurf List, View village button
   return (
     <div className="App">
       <h1>Smurf's Village!</h1>
       <div>
-        <h2>Let's Add Some New Smurfs!</h2>
+        <h2>Let's Add Some New Smurfs To Our Village!</h2>
         <SmurfForm />
       </div>
       <>
