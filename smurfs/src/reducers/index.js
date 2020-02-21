@@ -1,7 +1,7 @@
 const initialState = {
   isLoading: false,
   smurf: null,
-  error: "",
+  error: ""
 };
 
 export const reducer = (state = initialState, action) => {
@@ -9,19 +9,19 @@ export const reducer = (state = initialState, action) => {
     case "FETCHING_SMURF_START":
       return {
         ...state,
-        isLoading: true,
+        isLoading: true
       };
     case "FETCHING_SMURF_SUCCESS":
       return {
         ...state,
         isLoading: false,
-        smurf: action.payload,
+        smurf: action.payload
       };
     case "FETCHING_SMURF_FAILED":
       return {
         ...state,
         isLoading: false,
-        error: action.payload,
+        error: action.payload
       };
     default:
       return state;

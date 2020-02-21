@@ -1,25 +1,35 @@
-import React, { Component } from "react";
 import "./App.css";
+import React from "react";
 import SmurfForm from "./SmurfForm";
 import SmurfList from "./SmurfList";
+import { connect } from "react-redux";
+import { getSmurfs } from "../actions";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>Smurf's Village!</h1>
-        <div>
-          <h2>Let's Add Some New Smurfs!</h2>
-          <SmurfForm />
-        </div>
-        <div>
-          <h2>Click To Update Smurf Village</h2>
-          <button>Update Village</button>
-          <SmurfList />
-        </div>
+function App(props) {
+  // Display Smurf Form and Smurf List
+  return (
+    <div className="App">
+      <h1>Smurf's Village!</h1>
+      <div>
+        <h2>Let's Add Some New Smurfs!</h2>
+        <SmurfForm />
       </div>
-    );
-  }
+      <>
+        {!props.smurf && !props.isLoading && (
+          <button onClick={() => props.getSmurfs()}>View Village</button>
+        )}{" "}
+      </>
+      <SmurfList />
+    </div>
+  );
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    isLoading: state.isLoading,
+    smurf: state.smurf,
+    error: state.error
+  };
+};
+
+export default connect(mapStateToProps, { getSmurfs })(App);

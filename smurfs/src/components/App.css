@@ -1,3 +1,33 @@
 .App {
+  margin-top:-21px;
   text-align: center;
+  background-image: url('https://i.pinimg.com/originals/34/a3/7b/34a37b810b57d8fa2866f1f2d215c20e.jpg');
+  background-size:cover;
+  height:100vh;
+  color:black;
+}
+
+.smurfs {
+  background-color:lightslategray;
+  color:white;
+  min-width:30%;
+  max-width:35%;
+  margin:1% auto;
+  border-radius:50px;
+}
+
+.smurfs-container {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+button {
+  margin:1%;
+  padding:1%;
+  color:white;
+  background-color:black;
+}
+
+button:hover{
+  background-color:green;
 }
